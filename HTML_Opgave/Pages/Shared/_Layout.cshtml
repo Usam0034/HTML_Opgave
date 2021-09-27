@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Anders Boejersen</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body style="background-color: whitesmoke">
+    <header >
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3" style="background-color: darkgray" >
+            <div class="container" >
+                <a class="navbar-brand" asp-area="" asp-page="/Index" style="color: black">Anders Boejersen</a>
+                
+                <div class="nav-item" style="color: black">
+                    <a href="http://www.easj.dk/" style="text-align: center">EASJ</a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="text-right text-dark">Cand.scient. i matematik og datalogi</a>
+                    <a> - </a>
+                    <a href="https://anbo-easj.dk/cv/">CV</a>
+                </div>
+
+                
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="background-color: darkgray">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm" style="color: black" >
+                    Lektor på Datamatikeruddannelsen <br/>
+                    Zealand, Sjællands Erhvervsakademi, Roskilde
+                </div>
+                <div class="col-sm">
+                    
+                </div>
+                <div class="col-sm" style="color: black">
+                    Address (work):Maglegårdsvej 2, 4000 Roskilde <br/>
+                    E-mail (work) anbo(at)zealand.dk
+                </div>
+            </div>
+        </div>
+        
+        <div class="container border-dark border-top" style="color: black" >
+            <div class="row">
+                <div class="col">
+                    <a href="https://msdn.microsoft.com/en-us/default.aspx">Microsoft Developer Network</a>
+                    <a> | </a>
+                    <a href="https://msdn.microsoft.com/en-us/library/default.aspx">MSDN Library: Intro. til programmeringssprog mv. </a>
+                    <a>   /   </a>
+                    <a href="bekendtgoerelser/">Bekendtgørelser</a>
+                    <a>om datamatiker-uddannelsen, eksamen og lign.</a>
+                    <a href="index.htm" style="text-align: center">index</a>
+                </div>
+            </div>
+    
+        </div>
+        
+        
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
